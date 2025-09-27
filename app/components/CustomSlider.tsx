@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   },
   slider: {
     width: "100%",
-    height: 40, // ensures enough space for track + thumb
+    height: 40, 
   },
   marksContainer: {
     flexDirection: "row",
@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 5,
     right: 5,
-    top: 20, // match half of slider height to center
-    height: 0, // no extra height, centers based on top
+    top: 20, 
+    height: 0, 
     alignItems: "center",
   },
   mark: {

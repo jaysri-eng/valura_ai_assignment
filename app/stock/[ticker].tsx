@@ -14,7 +14,6 @@ import { colors } from '../constants/colors';
 import StockDetails from '../types/Stock';
 import { BottomSection } from '../components/BottomSection';
 import BuySellTabs from '../components/BuySellTabs';
-import { AddFundsModal } from '../components/AddFundsModal';
 import { StockSelectorModal } from '../components/StockSelectorModal';
 import { Header } from '../components/Header';
 
@@ -42,17 +41,6 @@ export default function StockPage() {
     console.log('Ticker param:', ticker);
     console.log("logo url of ticker is",currentStock?.logo_url);
   }, [ticker]);
-
-  // useEffect(() => {
-  //   console.log('Stock data:', data);
-  //   if (data && data.results) {
-  //     setCurrentStock({
-  //       ticker: data.results.ticker,
-  //       name: data.results.name,
-  //       logo_url: data.results.branding.logo_url,
-  //     });
-  //   }
-  // }, [data]);
   useEffect(() => {
     console.log('Stock data:', data);
     if (data && data.results) {

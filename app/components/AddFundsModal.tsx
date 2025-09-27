@@ -16,12 +16,10 @@ interface AddFundsModalProps {
   onClose: () => void;
 }
 
-// Add Funds Modal with Native Keyboard
 export const AddFundsModal: React.FC<AddFundsModalProps> = ({ visible, onClose }) => {
   const [fundsAmount, setFundsAmount] = useState("");
   const [autoFocusInput, setAutoFocusInput] = useState(false);
   const handleAddFundsSubmit = () => {
-    // Handle the funds addition logic here
     console.log("Adding funds:", fundsAmount);
     onClose();
     setFundsAmount("");
