@@ -5,7 +5,7 @@ interface Stock {
   name: string;
 }
 
-// Mock data - replace with your actual data source
+// Mock data 
 const mockStocks: Stock[] = [
   { ticker: 'AAPL', name: 'Apple Inc.' },
   { ticker: 'GOOGL', name: 'Alphabet Inc.' },
