@@ -26,6 +26,7 @@ https://drive.google.com/drive/folders/1Gigx6JUM9jXuHyXf8TQiH5PV_PO8V5BC?usp=sha
 
 # Caching
 For caching I have used the local storage or AsyncStorage module. When you switch between the stocks available if that particular stock detail is already stored in the cache then it will use that to display the details if not then it will make a new request. 
+Can use Tanstack query for caching but couldn't complete it!
 
 
 
