@@ -22,12 +22,10 @@ export function useStockList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate API call
     const fetchStocks = async () => {
       try {
         setLoading(true);
-        // Replace this with your actual API call
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate delay
+        await new Promise(resolve => setTimeout(resolve, 1000)); 
         setStocks(mockStocks);
       } catch (error) {
         console.error('Error fetching stocks:', error);
